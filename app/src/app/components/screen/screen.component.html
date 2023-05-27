@@ -1,9 +1,19 @@
-<select style="background-color: #7c7c7c; border: 2px solid #525252; border-radius: 5px">
+<select class="input">
   <option>IPhone</option>
   <option>Samsung</option>
   <option>Huawei</option>
 </select>
+<br>
 
+<input #input (change)="update(input.value)" class="input" style="" placeholder="URL" type="text">
+
+<br>
+<select #port (change)="update(port.value)" class="input" >
+  <option disabled selected>Port</option>
+  <option>4200</option>
+  <option>5500</option>
+</select>
+<br>
 
 <div style="margin-top: 135px">
   <div style="display: flex; justify-content: center; align-items: center">
@@ -13,7 +23,7 @@
 
   <div style="display: flex; justify-content: center; position: relative; top: -12px">
     <!--  <iframe class="screen-image" src="http://localhost:4200/"></iframe>-->
-    <iframe class="screen-image" src="http://localhost:4200/"></iframe>
+    <iframe class="screen-image" [src]="this.iframeSrc"></iframe>
 
   </div>
 

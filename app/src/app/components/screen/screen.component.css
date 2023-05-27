@@ -1,5 +1,17 @@
 .screen-image {
-  height: 675px;
-  width: 300px;
+  margin-top: -60px;
+  height: 665px;
+  width: 320px;
   border: none;
+}
+
+.input {
+  margin-top: 5px;
+  background-color: #797878;
+  border-radius: 10px;
+  border: 2px solid #3d3d3d
+}
+
+.input::placeholder {
+  color: black;
 }
