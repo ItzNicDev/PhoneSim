@@ -1,30 +1,50 @@
-<select class="input">
-  <option>IPhone</option>
-  <option>Samsung</option>
-  <option>Huawei</option>
+<select class="selection" #phone (change)="changeDevice(phone.value)">
+  <option selected>{{localStorage.getItem("device-name")}}</option>
+  <ng-container *ngFor="let phone of deviceList">
+    <option *ngIf="localStorage.getItem('device-name') != phone">
+      {{phone}}
+    </option>
+  </ng-container>
 </select>
-<br>
 
-<input #input (change)="update(input.value)" class="input" style="" placeholder="URL" type="text">
 
-<br>
-<select #port (change)="update(port.value)" class="input" >
-  <option disabled selected>Port</option>
-  <option>4200</option>
-  <option>5500</option>
-</select>
-<br>
 
-<div style="margin-top: 135px">
-  <div style="display: flex; justify-content: center; align-items: center">
-    <img style="justify-items: center; position: absolute; top: 100px" src="assets/img/screen.png" alt="">
+<!--All Screens:-->
+
+<ng-container *ngIf="localStorage.getItem('device-name') == 'IPhone'">
+  <div class="center" style="margin-top: 70px">
+    <img class="iphone-frame" src="assets/img/iphone-chrome.png">
+    <iframe class="iphone-screen" [src]="url"></iframe>
+    <input #input (change)="loadURL(input.value)" placeholder="{{localStorage.getItem('url')}}" class="url-iphone" type="url">
+
+    <label class="time">{{time}}</label>
   </div>
+</ng-container>
 
 
-  <div style="display: flex; justify-content: center; position: relative; top: -12px">
-    <!--  <iframe class="screen-image" src="http://localhost:4200/"></iframe>-->
-    <iframe class="screen-image" [src]="this.iframeSrc"></iframe>
+<ng-container *ngIf="localStorage.getItem('device-name') == 'MacBook'">
+
+  <div class="center" style="margin-top: 70px">
+    <img class="iphone-frame" src="assets/img/MacBook-Chrome.png">
+    <iframe class="macbook-screen" [src]="url" src="http://localhost:49513/"></iframe>
+<!--    <div class="macbook-screen" ></div>-->
+
+    <input #input (change)="loadURL(input.value)" class="url-macbook" placeholder="{{localStorage.getItem('url')}}" type="url">
 
   </div>
+</ng-container>
 
-</div>
+
+
+<ng-container *ngIf="localStorage.getItem('device-name') == 'IMac'">
+
+  <div class="center" style="margin-top: 70px">
+    <img class="iphone-frame" src="assets/img/IMac-chrome.png">
+    <iframe class="imac-screen" [src]="url" src="http://localhost:49513/"></iframe>
+    <!--    <div class="macbook-screen" ></div>-->
+
+    <input #input (change)="loadURL(input.value)" class="url-imac" placeholder="{{localStorage.getItem('url')}}" type="url">
+
+  </div>
+</ng-container>
+

@@ -1,17 +1,97 @@
-.screen-image {
-  margin-top: -60px;
-  height: 665px;
-  width: 320px;
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*IPhone:*/
+.iphone-frame {
+  height: 700px;
+}
+
+.iphone-screen {
+  position: absolute;;
   border: none;
+  height: 521px;
+  margin-top: 95px;
+  width: 304px;
+  margin-left: -1px;
 }
 
-.input {
-  margin-top: 5px;
-  background-color: #797878;
+.macbook-screen {
+  /*background-color:red ;*/
+  position: absolute;;
+  border: none;
+  height: 457px;
+  margin-top: 105px;
+  width: 875px;
+  margin-left: -13px;
+}
+
+
+.imac-screen {
+  position: absolute;;
+  border: none;
+  height: 360px;
+  margin-top: 95px;
+  width: 818px;
+  /*margin-left: -13px;*/
+}
+
+.url-iphone {
+  position: absolute;
+  margin-top: 63px;
+  background-color: transparent;
+  border: none;
+  margin-right: 30px;
+  width: 250px;
+  height: 21px;
+  border-radius: 15px;
+}
+.url-imac {
+  position: absolute;
+  margin-top: 77.5px;
+  background-color: transparent;
+  border: none;
+  margin-right: 1px;
+  width: 695px;
+  height: 9px;
+  border-radius: 15px;
+  color: white;
+}
+
+.url-macbook {
+  position: absolute;
+  margin-top: 85.5px;
+  background-color: transparent;
+  border: none;
+  margin-right: 12px;
+  width: 748px;
+  height: 14px;
+  border-radius: 15px;
+  color: white;
+}
+
+
+
+.time {
+  position: absolute;
+  margin-top: 30px;
+  margin-right: 200px;
+  color: white;
+
+  font-family: ".AppleSystemUIFont";
+  font-size: 14px;
+
+
+}
+
+.selection {
   border-radius: 10px;
-  border: 2px solid #3d3d3d
+  background-color: #565656;
+  text-align: center;
 }
 
-.input::placeholder {
-  color: black;
-}
+
+
+
