@@ -8,13 +8,15 @@
 </select>
 
 
-
 <!--All Screens:-->
 
 <ng-container *ngIf="localStorage.getItem('device-name') == 'IPhone'">
   <div class="center" style="margin-top: 70px">
-    <img class="iphone-frame" src="assets/img/iphone-chrome.png">
+    <img class="iphone-frame" style="cursor: url('/assets/img/cursor.svg') 10 10, auto " src="assets/img/iphone-chrome.png">
+
+
     <iframe class="iphone-screen" [src]="url"></iframe>
+
     <input value="{{localStorage.getItem('url')}}" #input (change)="loadURL(input.value)" class="url-iphone" type="url">
 
     <label class="time">{{time}}</label>
@@ -27,13 +29,13 @@
   <div class="center" style="margin-top: 70px">
     <img class="iphone-frame" src="assets/img/MacBook-Chrome.png">
     <iframe class="macbook-screen" [src]="url" src="http://localhost:49513/"></iframe>
-<!--    <div class="macbook-screen" ></div>-->
+    <!--    <div class="macbook-screen" ></div>-->
 
-    <input #input (change)="loadURL(input.value)" class="url-macbook" placeholder="{{localStorage.getItem('url')}}" type="url">
+    <input #input (change)="loadURL(input.value)" class="url-macbook" placeholder="{{localStorage.getItem('url')}}"
+           type="url">
 
   </div>
 </ng-container>
-
 
 
 <ng-container *ngIf="localStorage.getItem('device-name') == 'IMac'">
@@ -43,7 +45,8 @@
     <iframe class="imac-screen" [src]="url" src="http://localhost:49513/"></iframe>
     <!--    <div class="macbook-screen" ></div>-->
 
-    <input #input (change)="loadURL(input.value)" class="url-imac" placeholder="{{localStorage.getItem('url')}}" type="url">
+    <input #input (change)="loadURL(input.value)" class="url-imac" placeholder="{{localStorage.getItem('url')}}"
+           type="url">
 
   </div>
 </ng-container>

@@ -1,6 +1,7 @@
 .center {
   display: flex;
   justify-content: center;
+
 }
 
 
@@ -16,6 +17,8 @@
   margin-top: 95px;
   width: 304px;
   margin-left: -1px;
+  z-index: 1;
+
 }
 
 .macbook-screen {
