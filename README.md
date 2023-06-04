@@ -12,7 +12,7 @@ Cross Platform Lab is an application that helps users visually display their dev
 
 ## Screenshots
 
-![Preview]([screenshots/screenshot1.png](https://github.com/ItzNicDev/PhoneSim/blob/main/screenshots/preview.png))
+![Preview](screenshots/preview.png)
 
 ## Setup
 
