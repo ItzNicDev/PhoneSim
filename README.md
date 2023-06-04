@@ -12,7 +12,7 @@ Cross Platform Lab is an application that helps users visually display their dev
 
 ## Screenshots
 
-![Preview](screenshots/preview.png)
+<img src="screenshots/preview.png" alt="preview-screenshot" height="200">
 
 ## Setup
 
