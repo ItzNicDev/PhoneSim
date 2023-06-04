@@ -1,0 +1,16 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import {ScreenComponent} from "./components/screen/screen.component";
+import {PreviewComponent} from "./components/preview/preview.component";
+
+const routes: Routes = [
+  { path: '', component: ScreenComponent },
+  { path: 'screen', component: ScreenComponent },
+  { path: 'preview', component: PreviewComponent }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

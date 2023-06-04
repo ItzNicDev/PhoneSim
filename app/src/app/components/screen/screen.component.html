@@ -15,7 +15,7 @@
   <div class="center" style="margin-top: 70px">
     <img class="iphone-frame" src="assets/img/iphone-chrome.png">
     <iframe class="iphone-screen" [src]="url"></iframe>
-    <input #input (change)="loadURL(input.value)" placeholder="{{localStorage.getItem('url')}}" class="url-iphone" type="url">
+    <input value="{{localStorage.getItem('url')}}" #input (change)="loadURL(input.value)" class="url-iphone" type="url">
 
     <label class="time">{{time}}</label>
   </div>
@@ -47,4 +47,6 @@
 
   </div>
 </ng-container>
+
+
 
