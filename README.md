@@ -12,6 +12,8 @@ Cross Platform Lab is an application that helps users visually display their dev
 
 ## Screenshots
 
+![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 2](screenshots/screenshot2.png)
 
 ## Setup
 
@@ -20,7 +22,7 @@ To get started with Cross Platform Lab, you can clone the repository to your loc
 1. Open your terminal.
 2. Change the current working directory to the location where you want the cloned directory to be created.
 3. Run the following command to clone the repository:
- - git clone https://github.com/your-username/your-repository.git
+ - git clone https://github.com/ItzNicDev/PhoneSim.git
 4. In Order to start the app change the directory to the app via "cd app"
 5. Start the app with "ng serve" or "npm start"
 
@@ -33,6 +35,6 @@ To get started with Cross Platform Lab, you can clone the repository to your loc
 
 ## Contributors
 
-- Max Mustermann [@itznicdev](https://github.com/itznicdev)
+- Niclas Pirkl [@itznicdev](https://github.com/itznicdev)
 
 We welcome contributions from developers! If you've found a bug or would like to propose an improvement, please create an issue or a pull request.
